@@ -353,7 +353,7 @@ select {
   cursor: pointer;
 }
 
-.blog-form button::hover {
+.blog-form form button:hover {
   background-color: #be260e;
   color: white;
 }
