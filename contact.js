@@ -22,6 +22,6 @@ function submitForm() {
   // untuk membuat elemen a agar mengeksekusi perintah submit dan data form bakal dikirim ke email
   let emailReceiver = 'joelhukubun@gmail.com'
   let a = document.createElement('a')
-  a.href = `mailto:${emailReceiver}?subject=${subject}&body=Hallo, nama saya ${name}, ${message}`
+  a.href = `mailto:${emailReceiver}?subject=${subject}&body=Hallo, nama saya ${name}.<br> ${message}`
   a.click()
 }
