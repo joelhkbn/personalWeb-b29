@@ -11,3 +11,4 @@ Website bisa diakses di https://joel-dw.netlify.app/
 ## Author
 
 - **Joel Hukubun**
+- **Dumbways.id**
