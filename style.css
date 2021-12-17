@@ -67,7 +67,10 @@ nav .right-side a {
   color: #fff;
   text-decoration: none;
 }
-
+nav .right a:hover {
+  background-color: #be260e;
+  color: white;
+}
 /* Card Profile */
 
 .personal {
