@@ -30,8 +30,6 @@ function addBlog(event) {
   blogs.push(blog)
 
   renderBlog()
-
-  // console.log(blogs)
 }
 
 function renderBlog() {
@@ -82,6 +80,7 @@ let month = [
   'December',
 ]
 
+// function untuk menunjukkan keterangan waktu postingan
 function getFullTime(time) {
   let date = time.getDate()
   let monthIndex = time.getMonth()
@@ -135,4 +134,4 @@ getTimeAgo()
 
 setInterval(() => {
   renderBlog()
-}, 10000)
+}, 5000)
