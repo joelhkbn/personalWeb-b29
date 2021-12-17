@@ -135,4 +135,4 @@ getTimeAgo()
 
 setInterval(() => {
   renderBlog()
-}, 5000)
+}, 5e3)
