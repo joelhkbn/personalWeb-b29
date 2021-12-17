@@ -180,7 +180,7 @@ nav .right-side a:hover {
   width: 40px;
 }
 
-.personal .right .sosmed-list a:hover {
+.personal .right .sosmed-list a img:hover {
   background-color: #dbdbdb;
 }
 
