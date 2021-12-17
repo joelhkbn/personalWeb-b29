@@ -180,6 +180,10 @@ nav .right-side a:hover {
   width: 40px;
 }
 
+.personal .right .sosmed-list a:hover {
+  background-color: #dbdbdb;
+}
+
 .skill .satu {
   flex: 1;
 }
