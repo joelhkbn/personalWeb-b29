@@ -76,10 +76,6 @@ nav .right-side a:hover {
   display: flex;
   height: 93vh;
 }
-/* .personal .index-container {
-  display: flex;
-  height: 93vh;
-} */
 
 .personal .left {
   flex: 40%;
