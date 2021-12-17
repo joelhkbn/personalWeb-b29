@@ -65,6 +65,7 @@ function renderBlog() {
   }
 }
 
+// bulan ditaruh dalam array karena pada basicnya tanggal di mulai dari 0, sehingga harus di ganti keterangannya dengan string
 let month = [
   'January',
   'February',
@@ -95,15 +96,15 @@ function getFullTime(time) {
 }
 
 function getTimeAgo(time) {
-  let timePost = time // Jam post di
-  let timeNow = new Date() // Jam sekarang
+  let timePost = time // kapan postingan di post
+  let timeNow = new Date() // waktu realtime untuk fitur "time ago"
 
   let distance = timeNow - timePost
 
   // convert to day => miliseconds in 1 day
-  let miliseconds = 1000 // milisekon dlm 1 detik
-  let secondsinHours = 3600 // second in 1 hours
-  let hoursInDay = 23 // hours in 1 day
+  let miliseconds = 1e3 // berapa milisekon dlm 1 detik
+  let secondsinHours = 3600 // how many second in 1 hours
+  let hoursInDay = 23 // how many hours in 1 day
 
   let distanceDay = Math.floor(
     distance / (miliseconds * secondsinHours * hoursInDay)
