@@ -65,6 +65,7 @@ nav .right-side a {
   color: #fff;
   text-decoration: none;
 }
+
 nav .right a:hover {
   background-color: #be260e;
   color: white;
@@ -255,6 +256,11 @@ select {
   border: none;
   color: #fff;
   cursor: pointer;
+}
+
+.form-contact form button:hover {
+  background-color: #be260e;
+  color: white;
 }
 
 /* Akhir Form */
