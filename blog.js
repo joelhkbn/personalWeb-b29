@@ -2,7 +2,7 @@
 let blogs = []
 
 window.onbeforeunload = function () {
-  return alert('Apakah anda yakin ingin meninggalkan halaman ini?')
+  return 'Apakah anda yakin ingin meninggalkan halaman ini?'
 }
 
 function addBlog(event) {

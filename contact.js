@@ -1,7 +1,4 @@
 // fungsi untuk mengambil data dari form
-window.onbeforeunload = function () {
-  return 'Apakah anda yakin ingin meninggalkan halaman ini?'
-}
 
 function submitForm() {
   let name = document.getElementById('input-name').value
