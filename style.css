@@ -353,6 +353,11 @@ select {
   cursor: pointer;
 }
 
+.blog-form button::hover {
+  background-color: #be260e;
+  color: white;
+}
+
 .blog hr {
   border: 1px solid #dbdbdb;
   width: 80%;
