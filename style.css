@@ -13,8 +13,6 @@ nav {
   background: #f4f3f3;
   height: 7vh;
   display: flex;
-  background: #f4f3f3;
-  height: 7vh;
   top: 0;
   position: fixed;
   width: 100%;
@@ -467,7 +465,7 @@ select {
 
 footer {
   margin-top: 100px;
-  background-color: #f4dada;
+  background-color: #f4f3f3;
   text-align: center;
   font-size: 13px;
   padding: 10px;
