@@ -2,7 +2,7 @@
 
 ## Pendahuluan
 
-Semua program yang dibuat pada repository ini dibuat untuk melatih pelajaran dari Day 1 - Day 6
+Semua program yang dibuat pada repository ini dibuat untuk mempelajari materi dari Day 1 - Day 6
 
 ## Alamat
 
