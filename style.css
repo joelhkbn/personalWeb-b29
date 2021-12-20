@@ -52,7 +52,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  text-shadow: 0 0 5px #dacaca;
+  text-shadow: 0 0 5px #ff5b5b;
 }
 
 nav ul li a.list-active {
@@ -185,7 +185,7 @@ nav .right-side a:hover {
 }
 
 .personal .right .sosmed-list a img:hover {
-  background-color: #dbdbdb;
+  text-shadow: 0 0 5px #c4c4c4;
 }
 
 .skill .satu {
