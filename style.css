@@ -51,6 +51,10 @@ nav ul li a {
   text-decoration: none;
 }
 
+nav ul li a:hover {
+  text-shadow: 0 0 5px #ff0000;
+}
+
 nav ul li a.list-active {
   color: #ec4d37;
   font-weight: 700;
