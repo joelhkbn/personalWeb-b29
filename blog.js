@@ -19,6 +19,7 @@ function addBlog(event) {
 
   image = URL.createObjectURL(image.files[0])
 
+  // membuat object untuk dimasukkan ke dalam array
   let blog = {
     title: title,
     content: content,
@@ -27,17 +28,23 @@ function addBlog(event) {
     postAt: new Date(),
   }
 
+  // Menambahkan object sebelumnya ke dalam array blogs dgn perintah push
   blogs.push(blog)
 
+  // function renderBlog() dijalankan
   renderBlog()
 }
 
 function renderBlog() {
+  // mengambil class contents
   let contentContainer = document.getElementById('contents')
 
+  // membersihkan kodingan html di dalam class content tadi
   contentContainer.innerHTML = ''
 
+  // di buat perulangan dimulai dari 0 dgn kondisi panjangnya index i sesuai panjangnya index dalam blogs
   for (let i = 0; i < blogs.length; i++) {
+    // dengan +=, konten akan ditambahkan
     contentContainer.innerHTML += ` <div class="blog-list-item">
           <div class="blog-image">
             <img src="${blogs[i].image}" alt="" />
@@ -65,20 +72,20 @@ function renderBlog() {
   }
 }
 
-// bulan ditaruh dalam array karena pada basicnya tanggal di mulai dari 0, sehingga harus di ganti keterangannya dengan string
+// getMonth() mengembalikan bulan (0 hingga 11) dari suatu tanggal sehingga nama-nama bulan harus di isi dengan string
 let month = [
-  'January',
-  'February',
-  'March',
+  'Januari',
+  'Februari',
+  'Maret',
   'April',
-  'May',
-  'June',
-  'July',
-  'August',
-  'Septmber',
-  'October',
+  'Mei',
+  'Juni',
+  'Juli',
+  'Agustus',
+  'September',
+  'Oktober',
   'November',
-  'December',
+  'Desember',
 ]
 
 // function untuk menunjukkan keterangan waktu postingan
@@ -90,6 +97,7 @@ function getFullTime(time) {
   let hours = time.getHours()
   let minutes = time.getMinutes()
 
+  // isi dari tampilan waktu
   let fullTime = `${date} ${month[monthIndex]} ${year} ${hours}:${minutes} WITA`
 
   return fullTime

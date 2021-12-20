@@ -7,7 +7,7 @@ function submitForm() {
   let subject = document.getElementById('input-subject').value
   let message = document.getElementById('input-message').value
 
-  // menggunakan OR untuk cek form-form yang belum di isi
+  // menggunakan IF untuk cek form-form yang belum di isi dan OR untuk memperpendek kodingan
   if (
     name == '' ||
     email == '' ||
@@ -19,7 +19,7 @@ function submitForm() {
     return alert('mohon diisi lengkap datanya ya mblo...')
   }
 
-  // untuk membuat elemen a agar mengeksekusi perintah submit dan data form bakal dikirim ke email
+  // membuat tag anchor agar mengeksekusi perintah submit dan data form bakal dikirim ke email
   let emailReceiver = 'joelhukubun@gmail.com'
   let a = document.createElement('a')
   a.href = `mailto:${emailReceiver}?subject=${subject}&body=Hallo. Nama saya ${name}. ${message}`
